@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <div class="lg:w-[1440px] w-[375px] ">
+      <div
+        class="lg:w-[600px] w-[375px] flex flex-col rounded-[20px] lg:flex-row lg:justify-self-center bg-[var(--White)] lg:my-[80px]"
+      >
+        <!-- ==========LEFT SIDE ================== -->
+        <div
+          class="bg-gradient-to-t from-[var(--Lightbluebackground)] to-[var(--Lightslatebluebackground)] flex-col w-full lg:w-[300px] p-5 rounded-b-[30px] lg:rounded-[20px] text-center items-center"
+        >
+          <h2 class="text-[var(--Light-lavender)] mt-2.5 mb-10 text-lg">
+            Your Result
+          </h2>
+          <div
+            class="w-[150px] h-[150px] rounded-full my-5 mx-auto flex flex-col justify-center items-center bg-gradient-to-b from-[var(--Violet-blue-circle)] to-[var(--Persian-blue-circle)]"
+          >
+            <h1 class="font-[64px] text-[var(--White)]">76</h1>
+            <p class="text-[var(--Light-lavender)] opacity-50">of 100</p>
+          </div>
+          <div>
+            <h2 class="text-[var(--White)] mt-[20px]">Great</h2>
+            <p class="text-[var(--Light-lavender)] mt-2.5 mb-10 text-lg">
+              You scored higher than 65% of the people who have taken this text
+            </p>
+          </div>
+        </div>
+        <!-- ==========RIGHT SIDE=======================-->
+        <div class="w-full lg:w-[300px] p-5 bg-[var(--White)] rounded-[20px]">
+          <h2 class="text-[var(--Dark-gray-blue)] text-lg font-bold mt-[10px] mb-[20px]">
+            Summary
+          </h2>
+          <div
+            class="flex justify-between bg-[var(--pink)] p-[15px] rounded-[10px] mb-5 text-[var(--Light-red)]"
+          >
+            <div class="flex gap-1.5 px-5">
+              <img src="/assets/images/icon-reaction.svg" alt="" />
+              <p class="">Reaction</p>
+            </div>
+            <div>
+              <p class="data">80 <span class="data">/100</span></p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-[10px] flex justify-between mb-5 bg-[var(--linghtpink)] text-[var(--Orangey-yellow)] p-[15px]"
+          >
+            <div class="flex gap-1.5 px-5">
+              <img src="/assets/images/icon-memory.svg" alt="" />
+              <p class="boxB">Memory</p>
+            </div>
+            <div>
+              <p class="data">
+                92 <span class="text-[var(--Light-lavender)]">/100</span>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-between bg-[var(--Green-teal)] rounded-[10px] p-[15px] mb-5 text-[var(--Green-deep)]"
+          >
+            <div class="flex gap-1.5 px-5">
+              <img src="/assets/images/icon-verbal.svg" alt="" />
+              <p class="boxC">Verbal</p>
+            </div>
+            <div>
+              <p class="data">61 <span>/100</span></p>
+            </div>
+          </div>
+          <div
+            class="flex justify-between bg-[var(--Pale-blue)] rounded-[10px] p-[15px] text-[var(--Cobalt-blue)] mb-5"
+          >
+            <div class="flex gap-1.5 px-5">
+              <img src="/assets/images/icon-visual.svg" alt="" />
+              <p class="">Visual</p>
+            </div>
+            <div>
+              <p class="data">73 <span>/100</span></p>
+            </div>
+          </div>
+          <button class="w-full">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
